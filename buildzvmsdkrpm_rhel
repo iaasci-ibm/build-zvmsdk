@@ -23,14 +23,15 @@ fi
 
 BRANCH=$1
 BUILD=~/rpmbuild
-REPO=https://github.com/openmainframeproject/python-zvm-sdk.git
+#REPO=https://github.com/openmainframeproject/python-zvm-sdk.git
+REPO=https://github.com/iaasci-ibm/python-zvm-sdk.git
 REPOTOP=python-zvm-sdk
 SDK=python-zvm-sdk
 
 EXISTS=$(git ls-remote -h $REPO | grep "$BRANCH"$ | wc -l )
 if [ "$EXISTS" == 0 ] ; then
 {
-  echo "Branch $BRANCH does not exist on /mfcloud/python-zvm-sdk"
+  echo "Branch $BRANCH does not exist on /iaasci-ibm/python-zvm-sdk"
   echo "Try choosing one of the following branches:  "
   git ls-remote --heads $REPO | awk -F "heads/" '{print $2}'
   exit 1
