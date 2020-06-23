@@ -26,7 +26,8 @@ fi
 
 BRANCH=$1
 BUILD=/root/zthin-build
-REPO=https://github.com/openmainframeproject/python-zvm-sdk.git
+#REPO=https://github.com/openmainframeproject/python-zvm-sdk.git
+REPO=https://github.com/iaasci-ibm/python-zvm-sdk.git
 REPOTOP=python-zvm-sdk
 ZTHINTOP=zthin-parts
 
