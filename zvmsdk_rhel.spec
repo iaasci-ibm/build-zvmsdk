@@ -3,15 +3,15 @@
 
 Summary: IBM z/VM cloud connector
 Name: %{name}
-Version: 1.5.0
-Release: 11.ibm.%{_buildnum}%{?dist}
+Version: 1.6.0
+Release: 1.ibm.%{_buildnum}%{?dist}
 Source: python-zvm-sdk.tar.gz
 Vendor: IBM
 License: ASL 2.0
 BuildArch: noarch
 Group: System/tools
 Autoreq: no
-Requires: python >= 2.7, python-netaddr >= 0.7.5, python2-PyJWT >= 1.0.1, python2-requests >= 2.6.0, python-routes >= 2.2, python-webob >= 1.2.3, python2-jsonschema >= 2.3.0, python-six >= 1.9.0, zthin >= 3.1.0, python-jinja2 >= 2.10
+Requires: python >= 3.6, python3-PyJWT >=1.7.1, python3-netaddr >= 0.7.19, python3-requests >= 2.22.0, python3-routes >= 2.4.1, python3-webob >= 1.8.5, python3-jsonschema >= 3.2.0, python3-six >= 1.14.0, zthin >= 3.1.2, python3-jinja2 >= 2.11, PyYAML>=3.10 
 BuildRoot: %{_tmppath}/python-zvm-sdk
 Prefix: /opt/python-zvm-sdk
 
