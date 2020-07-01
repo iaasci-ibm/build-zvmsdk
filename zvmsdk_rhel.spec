@@ -23,10 +23,10 @@ by external API consumer.
 tar -zxvf ../SOURCES/python-zvm-sdk.tar.gz -C ../BUILD/ --strip 1
 
 %build
-python setup.py build
+python3 setup.py build
 
 %install
-python setup.py install --single-version-externally-managed -O1 --root=%{buildroot} --record=INSTALLED_FILES
+python3 setup.py install --single-version-externally-managed -O1 --root=%{buildroot} --record=INSTALLED_FILES
 
 mkdir -p %{buildroot}/var/lib/zvmsdk
 mkdir -p %{buildroot}/etc/zvmsdk
