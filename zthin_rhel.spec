@@ -4,13 +4,14 @@
 Summary: System z hardware control point (zThin)
 Name: %{name}
 Version: %(cat Version)
-Release: 11.ibm.%{_buildnum}%{?dist}
+Release: 114.1.ibm.%{_buildnum}%{?dist}
 Source: zthin-build.tar.gz
 Vendor: IBM
 License: ASL 2.0
 Group: System/tools
 BuildRoot: %{_tmppath}/zthin
 Prefix: /opt/zthin
+requires:       rsyslog
 
 %description
 The System z hardware control point (zThin) is a set of APIs to interface with
